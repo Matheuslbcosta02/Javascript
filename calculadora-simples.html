@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA DAS OPERAÇÕES FUNDAMENTAIS</h1>
+    </header>
+    <main>
+        <section id="section1">
+            <menu>
+                <ul>
+                    <li><abbr title="Operação matemática representada pelo símbolo '  + '">SOMA</abbr></li>
+                    <li><abbr title="Operação matemática representada pelo símbolo ' - '">SUBTRAÇÃO</abbr></li>
+                    <li><abbr title="Operação matemática representada pelo símbolo ' * '">MULTIPLICAÇÃO</abbr></li>
+                    <li><abbr title="Operação matemática representada pelo símbolo ' / '">DIVISÃO</abbr></li>
+                </ul>
+            </menu>
+        </section>
+
+        <section id="section2">
+            <h2>FAÇA SUA OPERAÇÃO:</h2>
+            <div id="area-principal">
+                <select name="operacao" id="ioperacao" required>
+                    <option value="" selected>---escolha---</option>
+                    <option value="soma">SOMA</option>
+                    <option value="subtracao">SUBTRAÇÃO</option>
+                    <option value="multiplicacao">MULTIPLICAÇÃO</option>
+                    <option value="divisao">DIVISÃO</option>
+                    <input type="number" name="num1" id="inum1">
+                    <div id="iescolha"></div>
+                    <input type="number" name="num2" id="inum2">
+            </div>
+
+            <div id="botao"><button id="FINAL">RESULTADO</button></div>
+
+                <div id="resultado"></div>
+
+            </select>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por Matheus Costa
+    </footer>
+
+    <script src="calculadora.js" defer></script>
+</body>
+</html>
