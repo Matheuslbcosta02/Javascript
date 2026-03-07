@@ -58,3 +58,41 @@ function finalmente(){
     }
 }
 
+
+var modal = document.querySelector("#modal");
+var titulo = document.querySelector("#modal-titulo");
+var texto = document.querySelector("#modal-texto");
+var fechar = document.querySelector(".fechar");
+
+var itens = document.querySelectorAll("#section1 li")
+
+itens.forEach(function(item){
+    item.addEventListener("click",function(){
+        var nome = item.innerText
+        titulo.innerText = nome
+
+        if(nome === "SOMA"){
+            texto.innerText = "Operação matemática representada pelo símbolo ' + '"
+        }
+        if(nome === "SUBTRAÇÃO"){
+            texto.innerText = "Operação matemática representada pelo símbolo ' - '"
+        }
+        if(nome === "MULTIPLICAÇÃO"){
+            texto.innerText = "Operação matemática representada pelo símbolo ' * '"
+        }
+        if(nome === "DIVISÃO"){
+            texto.innerText = "Operação matemática representada pelo símbolo ' / '"
+        }
+        modal.classList.add("ativo")
+    })
+})
+
+fechar.addEventListener("click",function(){
+    modal.classList.remove("ativo")
+})
+
+modal.addEventListener("click", function(e){
+    if(e.target ===modal){
+        modal.classList.remove("ativo")
+    }
+})
