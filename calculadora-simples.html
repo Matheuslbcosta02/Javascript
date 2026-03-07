@@ -15,10 +15,23 @@
         <section id="section1">
             <menu>
                 <ul>
-                    <li><abbr title="Operação matemática representada pelo símbolo '  + '">SOMA</abbr></li>
-                    <li><abbr title="Operação matemática representada pelo símbolo ' - '">SUBTRAÇÃO</abbr></li>
-                    <li><abbr title="Operação matemática representada pelo símbolo ' * '">MULTIPLICAÇÃO</abbr></li>
-                    <li><abbr title="Operação matemática representada pelo símbolo ' / '">DIVISÃO</abbr></li>
+                    <li class="tooltip" tabindex="0"><abbr>SOMA</abbr>
+                        
+                    </li>
+
+                    <li class="tooltip" tabindex="0"><abbr>SUBTRAÇÃO</abbr>
+                        
+                    
+                    </li>
+
+                    <li class="tooltip" tabindex="0"><abbr>MULTIPLICAÇÃO</abbr>
+                        
+                    </li>
+
+                    <li class="tooltip" tabindex="0"><abbr>DIVISÃO</abbr>
+                        
+                    
+                    </li>
                 </ul>
             </menu>
         </section>
@@ -45,10 +58,21 @@
         </section>
     </main>
 
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <span class="fechar">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+
+
     <footer>
         Desenvolvido por Matheus Costa
     </footer>
 
     <script src="calculadora.js" defer></script>
+
+
 </body>
 </html>
