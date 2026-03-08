@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: rgba(255, 255, 0, 0.427);
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 7px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.237);
+}
+
+main{
+
+    flex: 1;
+
+}
+
+section#principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    margin-top: 7px;
+}
+
+
+form#entradas{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.511);
+    
+}
+
+form#entradas>h2{
+    background-color: rgba(255, 166, 0, 0.664);
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.386);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.342);
+    border-radius: 40px;
+    
+}
+
+form#entradas> div#nome{
+    gap: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+form#entradas> div#idade{
+    gap: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form#entradas> div#sexo{
+    gap: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form#entradas> div#confirm{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.butaos{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.276);
+    text-shadow: 1px 1px 7px white;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.butaos:hover{
+    background-color: yellow;
+    color: black;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+
+div#resultado{
+    height: 100px;
+    width: 400px;
+    border: 1px solid red;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    font-style: italic;
+    box-shadow: 1px 1px 1px black;
+}

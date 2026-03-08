@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular idade</title>
+    <link rel="stylesheet" href="calcular-idadestyle.css">
+    <link rel="shortcut icon" href="age.png" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h1>Calcular idade</h1>
+    </header>
+
+    <main>
+        <section id="principal">
+            <form  id="entradas">
+                <h2>Insira seus dados</h2>
+
+                <div id="nome">
+                    <label for="iname">Primeiro Nome:</label>
+                    <input type="text" name="iname" id="iname" required >
+                </div>
+
+                <div id="idade">
+
+                    <label for="age">Ano de Nascimento:</label>
+                    <input type="number" name="age" id="age" required>
+
+
+                </div>
+
+                <div id="sexo">
+
+                    <label for="">Sexo:</label>
+                    <label for="massex">Masculino</label>
+                    <input type="radio" name="sexoo" id="massex" checked>
+                    <label for="femsex">Feminino</label>
+                    <input type="radio" name="sexoo" id="femsex">
+
+
+                </div>
+
+                <div id="confirm">
+                    <button class="butaos" type="button" onclick="formulario()">VERIFICAR</button>
+                    <input type="reset" class="butaos"> 
+
+                </div>
+            </form>
+
+            <div id="resultado">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &hearts; Desenvolvido por Matheus Costa &hearts;
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="calcular-idade.js"></script>
+</body>
+</html>
