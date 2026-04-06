@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Contar</title>
+    <link rel="stylesheet" href="vamos_contar.css">
+</head>
+<body>
+        <header>
+            <p>VAMOS CONTAR</p>
+        </header>
+
+       <main>
+
+        <form action="submit">
+            <section id="icampos">
+                <div class="entradas">
+                    <label for="Iinicio">Inicio:</label>
+                    <input type="number" name="inicio" id="Iinicio" required>
+                    <label for="Ifim">Fim:</label>
+                    <input type="number" name="fim" id="Ifim" required>
+                    <label for="Ipasso">Passo:</label>
+                    <input type="number" name="passo" id="Ipasso" required>
+                    <button id="Ibotao">Contar</button>
+                </div>
+            </section>
+        </form>
+
+
+
+        <section id="iresultado">
+            <div class="saidas">
+                <p id="Icontagem">Contando:</p>
+                <p></p>
+
+            </div>
+        </section>
+
+
+
+
+       </main>
+
+        <footer>
+            Desenvolvido por Matheus Costa
+        </footer>
+
+        <script src="vamos_contar.js" defer></script>
+
+</body>
+</html>
