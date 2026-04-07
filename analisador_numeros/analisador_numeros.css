@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+header>p{
+   
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.381);
+    border-style: solid;
+    padding: 7px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    
+}
+
+
+div#entradas{
+    display: flex;
+    gap: 12px;
+    padding-bottom: 12px;
+}
+
+div#lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input#Ilabelentrada{
+    text-align: center;
+}
+
+button#Ibotao_adicionar{
+    width: 100px;
+    padding: 1px;
+}
+
+button#Ibotao_finalizar{
+    width: 200px;
+    padding: 7px;
+}
+
+button#Ibotao_reiniciar{
+    width: 100px;
+    padding: 7px;
+}
+
+.nossos_botoes{
+    border-radius: 7px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.242);
+}
+
+.nossos_botoes:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#Iselectlista{
+    
+    line-height: 1.8;
+    padding: 20px;
+    width: 20vw;
+    font-size: 18px;
+}
+
+footer{
+    margin-bottom: 7px;
+}

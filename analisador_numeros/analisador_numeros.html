@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="analisador_numeros.css">
+    <link rel="shortcut icon" href="number-blocks.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <p>Analisador de Números</p>
+    </header>
+
+    <main>
+        <section id="Iprincipal">
+            <form action="submit" id="Iadicionar">
+                <div id="entradas">
+
+                    <label for="Ilabelentrada">Número (entre 1 e 100):</label>
+                    <input type="number" id="Ilabelentrada" step="any">
+                    <button id="Ibotao_adicionar" class="nossos_botoes">Adicionar</button>
+
+                </div>
+
+            
+
+            </form>
+
+            <form action="submit" id="Ifinalizar">
+                <div id="lista">
+                    <select name="selectlista" id="Iselectlista" size="10">
+                
+                    </select>
+                    <button id="Ibotao_finalizar" class="nossos_botoes">Finalizar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="Iresultado">
+            
+        </section>
+        <button id="Ibotao_reiniciar" class="nossos_botoes">Reiniciar</button>
+    </main>
+
+    <footer>
+        Desenvolvido por Matheus Costa
+    </footer>
+
+    <script src="analisador_numeros.js" defer></script>
+    
+</body>
+</html>
